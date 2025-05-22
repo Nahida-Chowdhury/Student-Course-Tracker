@@ -13,7 +13,7 @@ A simple web application to track student courses using a form and a table. User
 ## Technologies Used
 
 - HTML5
-- CSS (Tailwind CSS)
+- Tailwind CSS (via CDN for simplicity)
 - JavaScript (Vanilla)
 - LocalStorage for data persistence
 
