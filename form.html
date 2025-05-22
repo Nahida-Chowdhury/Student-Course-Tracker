@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Course Tracker - Course Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body class="bg-gray-50 min-h-screen flex flex-col">
+
+  <!-- Header Menu -->
+  <nav class="bg-gray-800 text-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <div class="flex items-center space-x-4">
+          <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Logo"
+            class="h-8 w-8" />
+          <a href="index.html" id="nav-home" class="hover:text-white font-semibold">Home</a>
+          <a href="form.html" id="nav-form" class="hover:text-white font-semibold">Course Form</a>
+          <a href="table.html" id="nav-table" class="hover:text-white font-semibold">Courses Table</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-6xl mx-auto px-4 py-8">
+
+    <!-- Course Tracking Form -->
+    <section id="page-form">
+      <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Student Course Tracking Form</h1>
+      <p class="text-gray-700 text-center mb-4">
+        Fill out the form below to track your courses.
+      <form id="course-form" class="space-y-4 bg-white p-6 rounded shadow w-full max-w-7xl mx-auto">
+
+        <div>
+          <label for="studentName" class="block font-medium mb-1">Student Name</label>
+          <input type="text" id="studentName" name="studentName" placeholder="Enter your name" required
+            class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+        </div>
+
+        <div>
+          <label for="courseTitle" class="block font-medium mb-1">Course Title</label>
+          <input type="text" id="courseTitle" name="courseTitle" placeholder="Course Title" required
+            class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+        </div>
+
+        <div>
+          <label for="courseCode" class="block font-medium mb-1">Course Code</label>
+          <input type="text" id="courseCode" name="courseCode" placeholder="Course Code" required
+            class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+        </div>
+
+        <div>
+          <label for="instructorName" class="block font-medium mb-1">Instructor Name</label>
+          <input type="text" id="instructorName" name="instructorName" placeholder="Instructor Name" required
+            class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+        </div>
+
+        <div>
+          <label for="semester" class="block font-medium mb-1">Semester</label>
+          <input type="text" id="semester" name="semester" placeholder="Semester" required
+            class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+        </div>
+
+        <div>
+          <label for="status" class="block font-medium mb-1">Status</label>
+          <select id="status" name="status" required
+            class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <option value="">Select status</option>
+            <option value="Enrolled">Enrolled</option>
+            <option value="Completed">Completed</option>
+            <option value="Dropped">Dropped</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="grade" class="block font-medium mb-1">Grade (optional)</label>
+          <input type="text" id="grade" name="grade" placeholder="A / B+ / 90%"
+            class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+        </div>
+
+        <div class="flex justify-end">
+          <button type="submit"
+            class="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700 transition font-medium">
+            Submit
+          </button>
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+</body>
+
+</html>
